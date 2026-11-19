@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Douhui API",
+    "description": "Save your Douhui AI API key once in Settings and let the agent call Douhui's open endpoints directly: smart image generation, image editing, image editor tools, and video creation. The settings page can save or replace the key, look up the account points balance, and test connectivity. The key is stored locally on this machine and is never echoed back in plain text. Turning the plugin off keeps the stored key file but removes the settings page and its endpoints."
+  }
+}

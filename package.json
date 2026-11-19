@@ -1,0 +1,36 @@
+{
+  "name": "dsh-douhui-api",
+  "version": "1.0.0",
+  "description": "豆绘 AI 开放接口的 DSH 设置卡：在插件页填一次 API Key 就能让 Agent 直接调用豆绘接口（自动注入到执行环境，绕开 DSH 对 KEY 类环境变量的过滤），可保存/更换密钥、查询账户积分、测试连通性。 | Douhui AI OpenAPI settings card for DSH: save the API key once and let the agent call Douhui endpoints; includes balance lookup and a connectivity test.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "douhui", "douhuiai", "api-key"],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "RELEASE_NOTES_v1.0.0.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

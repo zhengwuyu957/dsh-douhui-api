@@ -1,0 +1,6 @@
+# dsh-douhui-api bundle：插入插件行（id 与包名保持一致）。
+- insert:
+    - id: dsh-douhui-api
+      name: dsh-douhui-api
+      config:
+        apiBase: 'https://dhd.douhuiai.com'
